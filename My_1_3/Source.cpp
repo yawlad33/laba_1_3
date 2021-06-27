@@ -8,15 +8,15 @@ int main() {
 	const int M = 3;
 
 	int matr[N][M];
-	cout << "Çàïîëíèòå ìàòğèöó: " << endl;
+	cout << "Ğ—Ğ°Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚Ğµ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñƒ: " << endl;
 
 	for (int i = 0; i < N; i++) {
-		cout << "Ââåäèòå " << i + 1 << " ñòğîêó: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ " << i + 1 << " ÑÑ‚Ñ€Ğ¾ĞºÑƒ: ";
 		for (int j = 0; j < M; j++)
 			cin >> matr[i][j];
 	}
 	int opred = matr[0][0] * matr[1][1] * matr[2][2] + matr[2][0] * matr[0][1] * matr[1][2] + matr[1][0] * matr[2][1] * matr[0][2] - matr[2][0] * matr[1][1] * matr[0][2] - matr[0][0] * matr[2][1] * matr[1][2] - matr[1][0] * matr[0][1] * matr[2][2];
 
-	cout << "Îïğåäåëèòåëü óêàçàííîé ìàòğèöû: " << opred;
+	cout << "ĞĞ¿Ñ€ĞµĞ´ĞµĞ»Ğ¸Ñ‚ĞµĞ»ÑŒ ÑƒĞºĞ°Ğ·Ğ°Ğ½Ğ½Ğ¾Ğ¹ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñ‹: " << opred;
 	return 0;
 }
